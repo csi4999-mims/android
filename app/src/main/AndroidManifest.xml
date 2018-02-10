@@ -18,6 +18,8 @@
         <activity android:name=".UserHomepageActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".ReportSubmissionActivity" />
+        <activity android:name=".ReportViewActivity"/>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

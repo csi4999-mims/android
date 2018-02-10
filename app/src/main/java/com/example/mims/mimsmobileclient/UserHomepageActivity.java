@@ -20,6 +20,9 @@ public class UserHomepageActivity extends AppCompatActivity {
         final EditText aphoneField = (EditText) findViewById(R.id.aPhoneNumField);
         final Button aupdateButton = (Button) findViewById(R.id.aUpdateButton);
         final Button achangePassButton = (Button) findViewById(R.id.aChangePassButton);
+        final Button asubmitNewReport = (Button) findViewById(R.id.aSubmitNewReport);
+        final Button aviewReports = (Button) findViewById(R.id.aViewReports);
+
 
         aupdateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +37,22 @@ public class UserHomepageActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent changeIntent = new Intent(UserHomepageActivity.this, ChangePasswordActivity.class);
                 UserHomepageActivity.this.startActivity(changeIntent);
+            }
+        });
+
+        asubmitNewReport.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent submitIntent = new Intent(UserHomepageActivity.this, ReportSubmissionActivity.class);
+                UserHomepageActivity.this.startActivity(submitIntent);
+            }
+        });
+
+        aviewReports.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent viewIntent = new Intent(UserHomepageActivity.this, ReportViewActivity.class);
+                UserHomepageActivity.this.startActivity(viewIntent);
             }
         });
     }
