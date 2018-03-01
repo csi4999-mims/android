@@ -19,7 +19,7 @@
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".ChangePasswordActivity" />
         <activity android:name=".ReportSubmissionActivity" />
-        <activity android:name=".ReportViewActivity"/>
+        <activity android:name=".ReportViewActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LEHomepageActivity" />
+        <activity android:name=".LEViewReportActivity" />
+        <activity android:name=".LEEditReportActivity"></activity>
     </application>
 
 </manifest>
