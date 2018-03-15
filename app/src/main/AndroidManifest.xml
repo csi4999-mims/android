@@ -29,7 +29,8 @@
         </activity>
         <activity android:name=".LEHomepageActivity" />
         <activity android:name=".LEViewReportActivity" />
-        <activity android:name=".LEEditReportActivity"></activity>
+        <activity android:name=".LEEditReportActivity" />
+        <activity android:name=".AssignReportNumber"></activity>
     </application>
 
 </manifest>
