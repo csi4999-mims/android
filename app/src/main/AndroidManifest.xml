@@ -30,7 +30,14 @@
         <activity android:name=".LEHomepageActivity" />
         <activity android:name=".LEViewReportActivity" />
         <activity android:name=".LEEditReportActivity" />
-        <activity android:name=".AssignReportNumber"></activity>
+        <activity android:name=".AssignReportNumber" />
+        <activity android:name=".WelcomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
