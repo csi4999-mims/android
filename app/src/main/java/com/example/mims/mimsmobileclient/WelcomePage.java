@@ -21,6 +21,8 @@ public class WelcomePage extends AppCompatActivity {
 
         startButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
+                //If the URL of the MIMS site changes sometime in the future,
+                //a patch will have to be made to correspond to this part of the code.
                 Intent viewIntent =
                         new Intent("android.intent.action.VIEW",
                                 Uri.parse("https://csi4999mims.online/"));
